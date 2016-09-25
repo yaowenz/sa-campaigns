@@ -44,14 +44,15 @@ class SingaporeShot2016 extends Controller
     		return \Redirect::back();
     	}    	
     	
-    	$filename = date('YmdHis') . "-{$data['mobile']}.jpg";    	    	
+    	$filename = date('YmdHis') . "-{$data['mobile']}.jpg";    
+    	$filesize = \Input::file('photo_file')->getSize();
     	\Input::file('photo_file')->move(base_path('public/uploads/2016-singapore-shot'), $filename);    
     	
     	$row = new SingaporeShot2016Data();
     	$row->author = $data['author'];
     	$row->title = $data['photo_title'];
     	$row->mobile = $data['mobile'];
-    	$row->file_size = \Input::file('photo_file')->getSize();
+    	$row->file_size = $filesize;
     	$row->file_path = 'uploads/2016-singapore-shot/' . $filename;
     	$row->save();
     	

@@ -33,6 +33,9 @@
 	</div>
 </div>
 </form>
+<div class="hide loading" style="position:absolute;left:calc(50% - 25px);top:48%;width:30px;height:30px;padding:10px;border-radius:10px;background-color:rgba(0,0,0,0.8)">
+	<img src="{{asset('css/i/loading.gif')}}" width="30" />
+</div>
 <script>
 $(function () {
 	@if(\Session::has('_error_input'))
@@ -61,6 +64,8 @@ $(function () {
 			alert('请输入作品名称');
 			return false;
 		}	
+
+		$('.loading').removeClass('hide');
 		
 		$('form').submit();
 	});
