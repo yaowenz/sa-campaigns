@@ -25,7 +25,7 @@
 		</div>
 	</div>
 </div>
-<div style="position:absolute;bottom:0px;text-align:center;background-color:rgba(0,0,0,0.6);padding:18px 0px;width:100%">
+<div style="position:absolute;bottom:0px;text-align:center;background-color:rgba(0,0,0,0.7);padding:18px 0px;width:100%">
 	<img class="submit-shot" src="{{asset('campaigns/2016-singapore-shot/i/shot.png')}}" width="95%" />
 </div>
 </form>

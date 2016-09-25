@@ -16,7 +16,7 @@
 	<div class="input-round" style="width:60%;margin:0 20%;background-color:#f8b72a">
 		<span>作品名：</span>		
 	</div>
-	<textarea name="story" placeholder="关于照片的小故事..." style="box-sizing:border-box;border:0px;margin-top:20px;width:100%;background-color:rgba(255,255,255,0.9);height:80px;padding:10px;line-height:1.6;font-size:16px"></textarea>
+	<textarea name="story" placeholder="关于照片的小故事..." style="border-radius:0px;box-sizing:border-box;border:0px;margin-top:15px;width:100%;background-color:rgba(255,255,255,0.9);height:80px;padding:10px;line-height:1.6;font-size:16px"></textarea>
 	<div style="margin-top:5px;text-align:center;line-height:30px;font-size:16px;color:white;font-weight:bold">
 		<input type="checkbox" value="1" name="copyright" style="height:20px;width:20px;background-color:white;border:0px;position:relative;top:5px" />&nbsp;&nbsp;同意照片使用授权		
 	</div>
