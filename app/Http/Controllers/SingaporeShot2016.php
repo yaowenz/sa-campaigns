@@ -107,4 +107,11 @@ class SingaporeShot2016 extends Controller
     public function getSuccess() {
     	return $this->view('success');
     }
+    
+    public function getPhotoList() {
+    	
+    	$photos = SingaporeShot2016Data::orderBy('id', 'DESC')->get();
+    	
+    	return $this->view('photo-list', ['photos' =>  $photos]);
+    }
 }

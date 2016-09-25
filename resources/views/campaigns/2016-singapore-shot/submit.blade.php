@@ -25,8 +25,8 @@
 	</div>
 </div>
 </form>
-<div style="position:absolute;bottom:0px;text-align:center;background-color:#e8323f;padding:18px 0px">
-	<img class="submit-upload" src="{{asset('campaigns/2016-singapore-shot/i/upload-btn.png')}}" width="95%" />
+<div class="submit-upload" style="position:absolute;bottom:0px;text-align:center;background-color:#e8323f;padding:18px 0px">
+	<img  src="{{asset('campaigns/2016-singapore-shot/i/upload-btn.png')}}" width="95%" />
 </div>
 <script>
 $(function () {
