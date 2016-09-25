@@ -23,10 +23,14 @@
 			<span>作品名：</span>
 			<input type="text" name="photo_title" />
 		</div>
+		
 	</div>
 </div>
 <div style="position:absolute;bottom:0px;text-align:center;background-color:rgba(0,0,0,0.7);padding:18px 0px;width:100%">
-	<img class="submit-shot" src="{{asset('campaigns/2016-singapore-shot/i/shot.png')}}" width="95%" />
+	<img style="postion:relative" class="submit-shot" src="{{asset('campaigns/2016-singapore-shot/i/shot.png')}}" width="95%" />
+	<div style="width:100%;position:absolute;z-index:0;top:18px;overflow:hidden;text-align:center;font-size:20px;opacity:0">
+		<input type="file" name="photo_file" style="height:100%">
+	</div>
 </div>
 </form>
 <script>
@@ -36,22 +40,7 @@ $(function () {
 		$('.form').addClass('animated fadeIn');
 	}, 200);
 	
-	$('.submit-shot').click(function() {
-		if($('input[name=author]').val() == '') {
-			alert('请输入作者姓名');
-			return false;
-		}
-		if($('input[name=mobile]').val() == '') {
-			alert('请输入联系电话');
-			return false;
-		}
-		if($('input[name=photo_title]').val() == '') {
-			alert('请输入作品名称');
-			return false;
-		}
-		
-		$('form').submit();
-	});
+	
 })
 </script>
 @endsection
