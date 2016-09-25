@@ -19,5 +19,11 @@ $(function () {
 	}, 200);
 	
 })
+
+var hammertime = new Hammer(document.body);
+hammertime.on('swipeleft', function(ev) {
+	location.href = '{{action('SingaporeShot2016@getSignup')}}';
+});
+
 </script>
 @endsection

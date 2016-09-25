@@ -11,7 +11,8 @@
         <script src="{{asset('js/vendor/modernizr-2.8.3.min.js')}}"></script>
         <script src="{{asset('js/plugins.js')}}"></script>
         <script src="{{asset('js/vendor/jquery-1.12.4.min.js')}}"></script>
-        <script src="{{asset('js/vendor/fastclick.js')}}"></script>        
+        <script src="{{asset('js/vendor/fastclick.js')}}"></script>
+        <script src="{{asset('js/vendor/hammer.min.js')}}"></script>      
     </head>
     <body>
 		@yield('content')
