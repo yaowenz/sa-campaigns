@@ -17,7 +17,6 @@ $(function () {
 		$('.share').removeClass('hide');
 		$('.share').addClass('animated fadeInUp');
 	}, 200);
-
 })
 </script>
 @endsection

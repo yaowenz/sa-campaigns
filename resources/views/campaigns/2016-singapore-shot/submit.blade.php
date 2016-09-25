@@ -4,7 +4,7 @@
 <style>
 @import url('{{asset('campaigns/2016-singapore-shot/main.css')}}')
 </style>
-<div style="position:absolute;top:5%;width:100%;height:50%;overflow:hidden">
+<div style="position:absolute;top:5%;width:100%;height:45%;overflow:hidden">
 	<img style="margin-left:35px" src="{{asset('campaigns/2016-singapore-shot/i/shot-border-top.png')}}" width="100%" />
 	<div style="box-sizing:border-box;padding:0 60px;width:100%;margin:-9% 0px;height:80%">
 		<div style="border-radius:20px;background-color:rgba(255,255,255,0.5);height:100%;width:100%">
@@ -12,7 +12,7 @@
 	</div>
 	<img style="margin-left:-35px" src="{{asset('campaigns/2016-singapore-shot/i/shot-border-bottom.png')}}" width="100%" />
 </div>
-<div style="position:absolute;top:55%;width:100%;;overflow:hidden">
+<div style="position:absolute;top:50%;width:100%;;overflow:hidden">
 	<div class="input-round" style="width:60%;margin:0 20%;background-color:#f8b72a">
 		<span>作品名：</span>		
 	</div>
