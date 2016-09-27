@@ -46,7 +46,7 @@ $(function () {
 
 	$('.submit-upload').click(function() {
 		if(!$('input[name=copyright]').prop('checked')) {
-			alert('请同意照片使用授权')
+			alert('请同意《作品版权归属协议》')
 			return false;
 		}
 
