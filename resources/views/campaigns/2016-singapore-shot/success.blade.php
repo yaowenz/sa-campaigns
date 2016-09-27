@@ -32,14 +32,14 @@ $(function () {
 		wx.onMenuShareTimeline({
 			title: '魅力新加坡', 
 			desc: '快和我一起参加【魅力新加坡】，上传新加坡照片，赢取丰厚大礼！',
-			link: '{{action('SingaporeShot2016@getIndex')}}','
+			link: '{{action('SingaporeShot2016@getIndex')}}',
 		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}},
 		    success: function () {},
 		    cancel: function () {}
 		});
 		wx.onMenuShareAppMessage({			
 			title: '快和我一起参加【魅力新加坡】，上传新加坡照片，赢取丰厚大礼！',
-		    link: '{{action('SingaporeShot2016@getIndex')}}','
+		    link: '{{action('SingaporeShot2016@getIndex')}}',
 		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}},		    
 		});
 	});
