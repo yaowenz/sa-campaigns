@@ -21,12 +21,20 @@
 	{{csrf_field()}}
 	<textarea name="story" placeholder="关于照片的小故事... （最多200字）" style="border-radius:0px;box-sizing:border-box;border:0px;margin-top:15px;width:100%;background-color:rgba(255,255,255,0.9);height:80px;padding:10px;line-height:1.6;font-size:16px"></textarea>
 	<div style="margin-top:5px;text-align:center;line-height:30px;font-size:16px;color:white;font-weight:bold">
-		<input type="checkbox" value="1" name="copyright" style="height:20px;width:20px;background-color:white;border:0px;position:relative;top:5px" />&nbsp;&nbsp;同意照片使用授权		
+		<input type="checkbox" value="1" name="copyright" style="height:20px;width:20px;background-color:white;border:0px;position:relative;top:5px" />&nbsp;&nbsp;<span class="copyright-btn">同意《作品版权归属协议》</span>		
 	</div>
 </div>
 </form>
 <div class="submit-upload" style="position:absolute;bottom:0px;text-align:center;background-color:#e8323f;padding:18px 0px">
 	<img  src="{{asset('campaigns/2016-singapore-shot/i/upload-btn.png')}}" width="95%" />
+</div>
+<div class="agreement hide" style="color:white;position:absolute;width:80%;top:10%;margin:auto 10%;padding:10px;border-radius:10px;background-color:rgba(0,0,0,0.8)">
+	<p style="text-align:center">作品版权归属协议</p>
+	<p>1. 本人承诺上传作品为本人独立拍摄或授权拍摄，享有完整的著作权。</p>
+	<p>2. 本人保留享有作品的署名权，并授权凯德龙之梦虹口对于本人上传照片的使用权。</p>
+	<p>3. 使用期间为2016年10月1日至2016年11月15日。</p>
+	<p>4. 本协议未尽事宜，适用于《中华人民共和国著作权》的规定。</p>
+	<p style="text-align:center">确定</p>
 </div>
 <script>
 $(function () {
@@ -50,6 +58,13 @@ $(function () {
 		$('form').submit();
 	})
 	
+	$('.copyright-btn').click(function() {
+		$('.agreement').removeClass('hide');
+	});
+
+	$('.agreement').click(function() {
+		$(this).addClass('hide');
+	})
 })
 </script>
 @endsection

@@ -20,7 +20,10 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+			"app/Libs/WX/config.inc.php"
+		]
     },
     "autoload-dev": {
         "classmap": [

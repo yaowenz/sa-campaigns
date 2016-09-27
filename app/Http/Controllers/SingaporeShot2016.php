@@ -104,8 +104,9 @@ class SingaporeShot2016 extends Controller
     	return \Redirect::action('SingaporeShot2016@getSuccess');
     }
     
-    public function getSuccess() {
-    	return $this->view('success');
+    public function getSuccess() {    	
+    	$wx_js = new \WXJs('hjl');    	
+    	return $this->view('success', ['wx_js' => $wx_js->getSignPackage()]);
     }
     
     public function getPhotoList() {
