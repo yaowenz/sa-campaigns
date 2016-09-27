@@ -11,6 +11,7 @@
 	<div style="text-align: center;font-size:50px;font-weight:bold">上传成功!</div>
 	<img src="{{asset('campaigns/2016-singapore-shot/i/rules.png')}}" width="80%" style="margin-top:30px;margin-left:10%;margin-right:10%">
 </div>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
 $(function () {
 	setTimeout(function() {
@@ -33,14 +34,14 @@ $(function () {
 			title: '魅力新加坡', 
 			desc: '快和我一起参加【魅力新加坡】，上传新加坡照片，赢取丰厚大礼！',
 			link: '{{action('SingaporeShot2016@getIndex')}}',
-		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}},
+		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}}',
 		    success: function () {},
 		    cancel: function () {}
 		});
 		wx.onMenuShareAppMessage({			
 			title: '快和我一起参加【魅力新加坡】，上传新加坡照片，赢取丰厚大礼！',
 		    link: '{{action('SingaporeShot2016@getIndex')}}',
-		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}},		    
+		    imgUrl: '{{asset('2016-singapore-shot/i/share-thumb.jpg')}}',		    
 		});
 	});
 })
