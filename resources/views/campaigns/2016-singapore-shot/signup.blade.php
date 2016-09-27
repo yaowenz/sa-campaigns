@@ -17,7 +17,7 @@
 		</div>
 		<div class="input-round" style="background-color:#00539d">
 			<span>手机：</span>
-			<input type="text" name="mobile" />
+			<input type="number" name="mobile" />
 		</div>
 		<div class="input-round" style="background-color:#f8b72a">
 			<span>作品名：</span>
