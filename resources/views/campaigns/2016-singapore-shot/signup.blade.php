@@ -22,9 +22,9 @@
 		<div class="input-round" style="background-color:#f8b72a">
 			<span>作品名：</span>
 			<input type="text" name="photo_title" />
-		</div>
-		{{csrf_field()}}
+		</div>		
 	</div>
+	{{csrf_field()}}
 </div>
 <div style="position:absolute;bottom:0px;text-align:center;background-color:rgba(0,0,0,0.7);padding:18px 0px;width:100%">
 	<img style="postion:relative" class="submit-shot" src="{{asset('campaigns/2016-singapore-shot/i/shot.png')}}" width="95%" />

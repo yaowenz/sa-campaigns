@@ -23,7 +23,7 @@ class SingaporeShot2016 extends Controller
     public function postSignup() {
     	
     	$limiter = app()->make(RateLimiter::class);
-    	if($limiter->tooManyAttempts('_2016_singapore_shot_upload', 2, 1)) {
+    	if($limiter->tooManyAttempts('_2016_singapore_shot_upload', 3, 1)) {
     		\Session::flash('_input_too_frequency', 1);
     		return \Redirect::back();
     	}
