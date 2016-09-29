@@ -4,7 +4,7 @@
 <style>
 @import url('{{asset('campaigns/2016-singapore-shot/main.css')}}')
 </style>
-<audio autoplay="autoplay" loop="loop" preload="auto" src="{{asset('campaigns/2016-singapore-shot/i/bg.ogg')}}"></audio>
+<audio id="bg-music" loop preload="auto" src="{{asset('campaigns/2016-singapore-shot/i/bg.mp3')}}"></audio>
 <div style="position:absolute;top:5%;width:100%;height:45%;overflow:hidden">
 	<img style="margin-left:35px" src="{{asset('campaigns/2016-singapore-shot/i/shot-border-top.png')}}" width="100%" />
 	<div style="box-sizing:border-box;padding:0 60px;width:100%;margin:-9% 0px;height:80%">
@@ -44,6 +44,7 @@ $(function () {
 		$('.next').addClass('animated fadeInLeft');
 	}, 200);
 
+	$('#bg-music')[0].play();
 
 	$('.submit-upload').click(function() {
 		if(!$('input[name=copyright]').prop('checked')) {

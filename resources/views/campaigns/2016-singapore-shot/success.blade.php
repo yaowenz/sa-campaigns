@@ -4,7 +4,7 @@
 <style>
 @import url('{{asset('campaigns/2016-singapore-shot/main.css')}}')
 </style>
-<audio autoplay loop src="{{asset('campaigns/2016-singapore-shot/i/bg.ogg')}}"></audio>
+<audio id="bg-music" loop preload="auto" src="{{asset('campaigns/2016-singapore-shot/i/bg.mp3')}}"></audio>
 <img class="share hide" style="position:absolute;top:15px;right:15px" src="{{asset('campaigns/2016-singapore-shot/i/share-btn.png')}}" width="30%" />
 <div style="position:absolute;top:25%;color:white;width:100%" class="success animated fadeIn">
 	<div style="text-align: center;font-size:50px;font-weight:bold">上传成功!</div>
@@ -17,6 +17,8 @@ $(function () {
 		$('.share').removeClass('hide');
 		$('.share').addClass('animated fadeInUp');
 	}, 200);
+
+	$('#bg-music')[0].play();
 
 	// WXJs Api
 	wx.config({
