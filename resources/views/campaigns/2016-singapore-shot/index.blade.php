@@ -4,7 +4,7 @@
 <style>
 @import url('{{asset('campaigns/2016-singapore-shot/main.css')}}')
 </style>
-<audio id="bg-music" autoplay loop src="{{asset('campaigns/2016-singapore-shot/i/bg.ogg')}}"></audio>
+<audio id="bg-music" preload="auto" loop src="{{asset('campaigns/2016-singapore-shot/i/bg.ogg')}}"></audio>
 <img class="logos-top" src="{{asset('campaigns/2016-singapore-shot/i/logos-top.png')}}" width="60%" />
 <img class="animated fadeIn" style="position:absolute;top:15%" src="{{asset('campaigns/2016-singapore-shot/i/index-title.png')}}" width="100%" />
 <a href="{{action('SingaporeShot2016@getSignup')}}"><img class="next hide" style="padding:30px 0px 30px 30px;position:absolute;top:calc(50% - 25px);right:15px" src="{{asset('campaigns/2016-singapore-shot/i/next.png')}}" height="35" /></a>
