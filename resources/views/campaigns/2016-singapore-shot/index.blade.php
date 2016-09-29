@@ -24,6 +24,7 @@ $(function () {
 
 var hammertime = new Hammer(document.body);
 hammertime.on('swipeleft', function(ev) {
+	$('#bg-music')[0].load();
 	$('#bg-music')[0].play();
 	//location.href = '{{action('SingaporeShot2016@getSignup')}}';
 });
