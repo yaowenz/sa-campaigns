@@ -17,13 +17,15 @@ $(function () {
 		$('.next').removeClass('hide');
 		$('.next').addClass('animated fadeInLeft');
 	}, 200);
+	
 
-	$('#bg-music')[0].play();
+	
 })
 
 var hammertime = new Hammer(document.body);
 hammertime.on('swipeleft', function(ev) {
-	location.href = '{{action('SingaporeShot2016@getSignup')}}';
+	$('#bg-music')[0].play();
+	//location.href = '{{action('SingaporeShot2016@getSignup')}}';
 });
 
 </script>
